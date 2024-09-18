@@ -283,9 +283,24 @@ td {
     <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "file:/home/gio/DH/WOW/WOW-Ontology.rdf",
+    "@id": "https://purl.archive.org/wow",
     "@type": [
       "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/creator": [
+      {
+        "@value": "Giorgio Corona, Dario Guidotti and Laura Pandolfo"
+      }
+    ],
+    "https://schema.org/dateIssued": [
+      {
+        "@value": "2024/09/18"
+      }
+    ],
+    "https://schema.org/license": [
+      {
+        "@value": "WOW Ontology is licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"
+      }
     ],
     "https://schema.org/name": [
       {
@@ -307,149 +322,49 @@ td {
               <strong>IRI</strong>
             </dt>
             <dd>
-              <code>file:/home/gio/DH/WOW/WOW-Ontology.rdf</code>
+              <code>https://purl.archive.org/wow</code>
             </dd>
           </div>
           <div>
             <dt>
-              <a class="hover_property" href="http://purl.org/dc/terms/title" title="A name given to the resource. Defined in DCMI Metadata Terms">Title</a>
+              <a class="proplink" href="http://purl.org/dc/terms/title">Title</a>
             </dt>
             <dd><p>WOW Ontology</p></dd>
           </div>
+          <div>
+            <dt>
+              <a class="proplink" href="http://purl.org/dc/terms/creator">Creators</a>
+            </dt>
+            <dd><p>Giorgio Corona, Dario Guidotti and Laura Pandolfo</p></dd>
+          </div>
+          <div>
+            <dt>
+              <a class="proplink" href="http://purl.org/dc/terms/issued">Date Issued</a>
+            </dt>
+            <dd><p>2024-09-18</p></dd>
+          </div>
+          <div>
+            <dt>
+              <a class="proplink" href="http://purl.org/dc/terms/license">License</a>
+            </dt>
+            <dd><a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0 Creative Commons license</a></dd>
+          </div>
+			 <div>
+            <dt>
+              <p>Ontology RDF</p>
+            </dt>
+            <dd><a href="https://github.com/AIMet-Lab/PRIN-WOW/blob/main/wow_schema.ttl">RDF (turtle)</a></dd>
+          </div>
         </dl>
       </div>
+      <h2>Description</h2>
+		<div id="description">
+		<p align=justify>The Women Writing around the Camera (wow) Schema is used for representing the <a href="https://purl.archive.org/wow">WOW Knowledge Graph</a> (KG) as Linked Data.
+			The KG maps the personal and professional networks about Italian cinema divas' lives, focusing on the dynamics between actresses' writings and films in which they performed, 
+			along with a comprehensive taxonomy of concepts and keywords that encapsulate the key themes for studying the lives of Italian actresses.</p>
+		</div>
       <div class="section" id="classes">
         <h2>Classes</h2>
-        <div class="property entity" id="Autobiography">
-          <h3>Autobiography
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>file:/home/gio/DH/WOW/WOW-Ontology.rdf#Autobiography</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="http://purl.org/dc/terms/creator">Creator</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://purl.org/spar/doco/contains">doco:contains</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://dbpedia.org/resource/firstPublisher">dbr:firstPublisher</a>
-                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://schema.org/creativeWorkStatus">schema:creativeWorkStatus</a>
-                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://schema.org/url">schema:url</a>
-                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="http://purl.org/arkivo/ontology#isMentionedIn">arkivo:isMentionedIn</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://purl.org/spar/doco/isContainedBy">doco:isContainedBy</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="Keyword">
-          <h3>Keyword
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>file:/home/gio/DH/WOW/WOW-Ontology.rdf#Keyword</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://www.w3.org/2004/02/skos/core#related">has related</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://schema.org/keywords">schema:keywords</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
         <div class="property entity" id="Actress">
           <h3>Actress
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
@@ -458,7 +373,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://dbpedia.org/resource/Actress</code>
+                <code>https://purl.archive.org/wow#Actress</code>
               </td>
             </tr>
             <tr>
@@ -467,7 +382,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Person">dbr:Person</a>
+                  <a href="http://dbpedia.org/ontology/Person">dbo:Person</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -482,9 +397,10 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://dbpedia.org/resource/Film</code>
+                <code>http://dbpedia.org/ontology/Film</code>
               </td>
             </tr>
+            <!--
             <tr>
               <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
@@ -496,6 +412,7 @@ td {
                 </span>
               </td>
             </tr>
+            -->
             <tr>
               <th>
                 <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
@@ -526,42 +443,25 @@ td {
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://schema.org/datePublished">schema:datePublished</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://schema.org/genre">schema:genre</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
                 </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="Keyword1">
-          <h3>Keyword
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://dbpedia.org/resource/Keyword</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-                  <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-                </span>
               </td>
             </tr>
           </table>
@@ -574,9 +474,10 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://dbpedia.org/resource/Person</code>
+                <code>http://dbpedia.org/ontology/Person</code>
               </td>
             </tr>
+            <!--
             <tr>
               <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
@@ -588,6 +489,7 @@ td {
                 </span>
               </td>
             </tr>
+            <-->
             <tr>
               <th>
                 <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
@@ -598,6 +500,12 @@ td {
                     <span>
                       <a href="http://purl.org/arkivo/ontology#isMentionedIn">arkivo:isMentionedIn</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://dbpedia.org/property/name">dbp:name</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
                   <li>
@@ -674,13 +582,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="http://dbpedia.org/resource/Actress">dbr:Actress</a>
+                      <a href="https://purl.archive.org/wow#Actress">dbo:Actress</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://dbpedia.org/resource/Writer">dbr:Writer</a>
+                      <a href="http://dbpedia.org/ontology/Writer">dbo:Writer</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -697,9 +605,10 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://dbpedia.org/resource/Place</code>
+                <code>http://dbpedia.org/ontology/Place</code>
               </td>
             </tr>
+            <!--
             <tr>
               <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
@@ -709,6 +618,22 @@ td {
                   <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
+              </td>
+            </tr>
+            -->
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://dbpedia.org/property/name">dbp:name</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -742,7 +667,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://dbpedia.org/resource/Writer</code>
+                <code>http://dbpedia.org/ontology/Writer</code>
               </td>
             </tr>
             <tr>
@@ -751,7 +676,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Person">dbr:Person</a>
+                  <a href="http://dbpedia.org/ontology/Person">dbo:Person</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -806,12 +731,6 @@ td {
                   </li>
                   <li>
                     <span>
-                      <a href="#debutAge">debutAge</a>
-                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
                       <a href="http://dbpedia.org/ontology/activeYearsStartYear">dbo:activeYearsStartYear</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
@@ -840,6 +759,12 @@ td {
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
+                  <li>
+                    <span>
+                      <a href="https://purl.archive.org/wow#debutAge">wow:debutAge</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
                 </ul>
               </td>
             </tr>
@@ -857,7 +782,7 @@ td {
                   </li>
                   <li>
                     <span>
-                      <a href="http://purl.org/dc/terms/creator">Creator</a>
+                      <a href="http://purl.org/dc/terms/creator">dcterms:creator</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -877,6 +802,7 @@ td {
                 <code>http://purl.org/spar/doco/BlockQuotation</code>
               </td>
             </tr>
+            <!--
             <tr>
               <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
@@ -888,18 +814,13 @@ td {
                 </span>
               </td>
             </tr>
+            -->
             <tr>
               <th>
                 <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
               </th>
               <td>
                 <ul>
-                  <li>
-                    <span>
-                      <a href="http://purl.org/spar/doco/isContainedBy">doco:isContainedBy</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
                   <li>
                     <span>
                       <a href="http://schema.org/about">schema:about</a>
@@ -914,7 +835,19 @@ td {
                   </li>
                   <li>
                     <span>
-                      <a href="#nPage">nPage</a>
+                      <a href="http://schema.org/url">schema:url</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.essepuntato.it/2008/12/pattern#isContainedBy">po:isContainedBy</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://purl.archive.org/wow#nPage">wow:nPage</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
@@ -927,7 +860,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://purl.org/spar/doco/contains">doco:contains</a>
+                  <a href="http://www.essepuntato.it/2008/12/pattern#contains">po:contains</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -945,6 +878,7 @@ td {
                 <code>http://www.w3.org/2004/02/skos/core#Concept</code>
               </td>
             </tr>
+            <!--
             <tr>
               <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
@@ -956,13 +890,14 @@ td {
                 </span>
               </td>
             </tr>
+            -->
             <tr>
               <th>
                 <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2004/02/skos/core#prefLabel">preferred label</a>
+                  <a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a>
                   <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                 </span>
               </td>
@@ -981,11 +916,167 @@ td {
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.w3.org/2004/02/skos/core#related">has related</a>
+                      <a href="http://www.w3.org/2004/02/skos/core#related">skos:related</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                 </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Autobiography">
+          <h3>Autobiography
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.archive.org/wow#Autobiography</code>
+              </td>
+            </tr>
+            <!--
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            -->
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://dbpedia.org/ontology/firstPublisher">dbo:firstPublisher</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.org/dc/terms/creator">dcterms:creator</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.essepuntato.it/2008/12/pattern#contains">po:contains</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://schema.org/creativeWorkStatus">schema:creativeWorkStatus</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://schema.org/datePublished">schema:datePublished</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://schema.org/genre">schema:genre</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://purl.org/arkivo/ontology#isMentionedIn">arkivo:isMentionedIn</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.essepuntato.it/2008/12/pattern#isContainedBy">po:isContainedBy</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Keyword">
+          <h3>Keyword
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.archive.org/wow#Keyword</code>
+              </td>
+            </tr>
+            <!--
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            -->
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+             <td>
+             	<ul>
+             	<li>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#related">skos:related</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+             </li>
+             <li>
+              <span>
+                <a href="http://www.w3.org/2000/01/rdf-schema#label ">rdfs:label</a>
+                <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+              </span>
+              </li>
+              </ul>
+             </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://schema.org/keywords">schema:keywords</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
               </td>
             </tr>
           </table>
@@ -1010,7 +1101,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Writer">dbr:Writer</a>
+                  <a href="http://dbpedia.org/ontology/Writer">dbo:Writer</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1021,7 +1112,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Place">dbr:Place</a>
+                  <a href="http://dbpedia.org/ontology/Place">dbo:Place</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1045,7 +1136,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Writer">dbr:Writer</a>
+                  <a href="http://dbpedia.org/ontology/Writer">dbo:Writer</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1056,7 +1147,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Place">dbr:Place</a>
+                  <a href="http://dbpedia.org/ontology/Place">dbo:Place</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1080,7 +1171,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Film">dbr:Film</a>
+                  <a href="http://dbpedia.org/ontology/Film">dbo:Film</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1091,7 +1182,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Person">dbr:Person</a>
+                  <a href="http://dbpedia.org/ontology/Person">dbo:Person</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1115,7 +1206,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Writer">dbr:Writer</a>
+                  <a href="http://dbpedia.org/ontology/Writer">dbo:Writer</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1126,7 +1217,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Person">dbr:Person</a>
+                  <a href="http://dbpedia.org/ontology/Person">dbo:Person</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1150,7 +1241,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Film">dbr:Film</a>
+                  <a href="http://dbpedia.org/ontology/Film">dbo:Film</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1161,7 +1252,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Person">dbr:Person</a>
+                  <a href="http://dbpedia.org/ontology/Person">dbo:Person</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1185,7 +1276,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Writer">dbr:Writer</a>
+                  <a href="http://dbpedia.org/ontology/Writer">dbo:Writer</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1196,7 +1287,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Person">dbr:Person</a>
+                  <a href="http://dbpedia.org/ontology/Person">dbo:Person</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1220,7 +1311,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Writer">dbr:Writer</a>
+                  <a href="http://dbpedia.org/ontology/Writer">dbo:Writer</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1231,7 +1322,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Person">dbr:Person</a>
+                  <a href="http://dbpedia.org/ontology/Person">dbo:Person</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1255,7 +1346,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Film">dbr:Film</a>
+                  <a href="http://dbpedia.org/ontology/Film">dbo:Film</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1266,7 +1357,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Person">dbr:Person</a>
+                  <a href="http://dbpedia.org/ontology/Person">dbo:Person</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1290,7 +1381,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Film">dbr:Film</a>
+                  <a href="http://dbpedia.org/ontology/Film">dbo:Film</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1301,7 +1392,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Writer">dbr:Writer</a>
+                  <a href="http://dbpedia.org/ontology/Writer">dbo:Writer</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1325,7 +1416,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Writer">dbr:Writer</a>
+                  <a href="http://dbpedia.org/ontology/Writer">dbo:Writer</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1336,7 +1427,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Person">dbr:Person</a>
+                  <a href="http://dbpedia.org/ontology/Person">dbo:Person</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1360,7 +1451,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Writer">dbr:Writer</a>
+                  <a href="http://dbpedia.org/ontology/Writer">dbo:Writer</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1371,7 +1462,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Person">dbr:Person</a>
+                  <a href="http://dbpedia.org/ontology/Person">dbo:Person</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1395,7 +1486,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Person">dbr:Person</a>
+                  <a href="http://dbpedia.org/ontology/Person">dbo:Person</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1406,7 +1497,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Autobiography">Autobiography</a>
+                  <a href="https://purl.archive.org/wow#Autobiography">wow:Autobiography</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1430,7 +1521,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Autobiography">Autobiography</a>
+                  <a href="https://purl.archive.org/wow#Autobiography">wow:Autobiography</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1441,77 +1532,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Writer">dbr:Writer</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="contains">
-          <h3>contains
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://purl.org/spar/doco/contains</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#Autobiography">Autobiography</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://purl.org/spar/doco/BlockQuotation">doco:BlockQuotation</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="isContainedBy">
-          <h3>is contained by
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://purl.org/spar/doco/isContainedBy</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://purl.org/spar/doco/BlockQuotation">doco:BlockQuotation</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#Autobiography">Autobiography</a>
+                  <a href="http://dbpedia.org/ontology/Writer">dbo:Writer</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1546,7 +1567,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                  <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1581,7 +1602,77 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Keyword">Keyword</a>
+                  <a href="https://purl.archive.org/wow#Keyword">wow:Keyword</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="contains">
+          <h3>contains
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.essepuntato.it/2008/12/pattern#contains</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://purl.archive.org/wow#Autobiography">wow:Autobiography</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.org/spar/doco/BlockQuotation">doco:BlockQuotation</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="isContainedBy">
+          <h3>is contained by
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.essepuntato.it/2008/12/pattern#isContainedBy</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.org/spar/doco/BlockQuotation">doco:BlockQuotation</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://purl.archive.org/wow#Autobiography">wow:Autobiography</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1605,7 +1696,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Keyword">Keyword</a>
+                  <a href="https://purl.archive.org/wow#Keyword">wow:Keyword</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1616,7 +1707,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                  <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1626,70 +1717,6 @@ td {
       </div>
       <div class="section" id="datatypeproperties">
         <h2>Datatype Properties</h2>
-        <div class="property entity" id="debutAge">
-          <h3>debut age
-            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>file:/home/gio/DH/WOW/WOW-Ontology.rdf#debutAge</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://dbpedia.org/resource/Writer">dbr:Writer</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="nPage">
-          <h3>n page
-            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>file:/home/gio/DH/WOW/WOW-Ontology.rdf#nPage</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://purl.org/spar/doco/BlockQuotation">doco:BlockQuotation</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a>
-              </td>
-            </tr>
-          </table>
-        </div>
         <div class="property entity" id="activeYearsStartYear">
           <h3>active years start year
             <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
@@ -1707,7 +1734,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Writer">dbr:Writer</a>
+                  <a href="http://dbpedia.org/ontology/Writer">dbo:Writer</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1739,7 +1766,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Writer">dbr:Writer</a>
+                  <a href="http://dbpedia.org/ontology/Writer">dbo:Writer</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1771,7 +1798,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Writer">dbr:Writer</a>
+                  <a href="http://dbpedia.org/ontology/Writer">dbo:Writer</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1803,7 +1830,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Writer">dbr:Writer</a>
+                  <a href="http://dbpedia.org/ontology/Writer">dbo:Writer</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1835,12 +1862,12 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Place">dbr:Place</a>
+                  <a href="http://dbpedia.org/ontology/Place">dbo:Place</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
                 <span class="cardinality">or</span>
                 <span>
-                  <a href="http://dbpedia.org/resource/Person">dbr:Person</a>
+                  <a href="http://dbpedia.org/ontology/Person">dbo:Person</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1872,7 +1899,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Person">dbr:Person</a>
+                  <a href="http://dbpedia.org/ontology/Person">dbo:Person</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1895,7 +1922,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://dbpedia.org/resource/firstPublisher</code>
+                <code>http://dbpedia.org/ontology/firstPublisher</code>
               </td>
             </tr>
             <tr>
@@ -1904,7 +1931,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Autobiography">Autobiography</a>
+                  <a href="https://purl.archive.org/wow#Autobiography">wow:Autobiography</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1936,12 +1963,12 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Autobiography">Autobiography</a>
+                  <a href="https://purl.archive.org/wow#Autobiography">wow:Autobiography</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
                 <span class="cardinality">or</span>
                 <span>
-                  <a href="http://dbpedia.org/resource/Film">dbr:Film</a>
+                  <a href="http://dbpedia.org/ontology/Film">dbo:Film</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1973,7 +2000,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Autobiography">Autobiography</a>
+                  <a href="https://purl.archive.org/wow#Autobiography">wow:Autobiography</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2005,12 +2032,12 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Autobiography">Autobiography</a>
+                  <a href="http://dbpedia.org/ontology/Film">dbo:Film</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
                 <span class="cardinality">or</span>
                 <span>
-                  <a href="http://dbpedia.org/resource/Film">dbr:Film</a>
+                  <a href="https://purl.archive.org/wow#Autobiography">wow:Autobiography</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2042,12 +2069,12 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Autobiography">Autobiography</a>
+                  <a href="https://purl.archive.org/wow#Autobiography">wow:Autobiography</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
                 <span class="cardinality">or</span>
                 <span>
-                  <a href="http://dbpedia.org/resource/Film">dbr:Film</a>
+                  <a href="http://dbpedia.org/ontology/Film">dbo:Film</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2079,7 +2106,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Autobiography">Autobiography</a>
+                  <a href="https://purl.archive.org/wow#Autobiography">wow:Autobiography</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2111,7 +2138,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Keyword">dbr:Keyword</a>
+                  <a href="http://dbpedia.org/ontology/Keyword">wow:Keyword</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2121,7 +2148,7 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
               </td>
             </tr>
           </table>
@@ -2143,7 +2170,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                  <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2153,7 +2180,7 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
               </td>
             </tr>
           </table>
@@ -2175,7 +2202,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://dbpedia.org/resource/Writer">dbr:Writer</a>
+                  <a href="http://dbpedia.org/ontology/Writer">dbo:Writer</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2186,6 +2213,70 @@ td {
               </th>
               <td>
                 <a href="http://www.w3.org/2001/XMLSchema#anyURI">xsd:anyURI</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="debutAge">
+          <h3>debut age
+            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.archive.org/wow#debutAge</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://dbpedia.org/ontology/Writer">dbo:Writer</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="nPage">
+          <h3>n page
+            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.archive.org/wow#nPage</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.org/spar/doco/BlockQuotation">doco:BlockQuotation</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a>
               </td>
             </tr>
           </table>
@@ -2201,7 +2292,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>file:/home/gio/DH/WOW/WOW-Ontology.rdf#artistAge</code>
+                <code>https://purl.archive.org/wow#artistAge</code>
               </td>
             </tr>
           </table>
@@ -2214,7 +2305,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>file:/home/gio/DH/WOW/WOW-Ontology.rdf#nTimes</code>
+                <code>https://purl.archive.org/wow#nTimes</code>
               </td>
             </tr>
           </table>
@@ -2223,9 +2314,9 @@ td {
       <div id="namespaces">
         <h2>Namespaces</h2>
         <dl>
-          <dt id=":">:</dt>
+          <dt id="wow">wow</dt>
           <dd>
-            <code>file:/home/gio/DH/WOW/WOW-Ontology.rdf#</code>
+            <code>https://purl.archive.org/wow#</code>
           </dd>
           <dt id="arkivo">arkivo</dt>
           <dd>
@@ -2239,10 +2330,6 @@ td {
           <dd>
             <code>http://dbpedia.org/property/</code>
           </dd>
-          <dt id="dbr">dbr</dt>
-          <dd>
-            <code>http://dbpedia.org/resource/</code>
-          </dd>
           <dt id="dcterms">dcterms</dt>
           <dd>
             <code>http://purl.org/dc/terms/</code>
@@ -2253,15 +2340,15 @@ td {
           </dd>
           <dt id="foaf">foaf</dt>
           <dd>
-            <code>http://xmlns.com/foaf/0.1/</code>
-          </dd>
-          <dt id="ns1">ns1</dt>
-          <dd>
-            <code>file:/home/gio/DH/WOW/</code>
+            <code>http://xmlns.com/foaf/0.1/</code>>
           </dd>
           <dt id="owl">owl</dt>
           <dd>
             <code>http://www.w3.org/2002/07/owl#</code>
+          </dd>
+          <dt id="po">po</dt>
+          <dd>
+            <code>http://www.essepuntato.it/2008/12/pattern#</code>
           </dd>
           <dt id="rdf">rdf</dt>
           <dd>
@@ -2342,19 +2429,13 @@ td {
           </h4>
           <ul class="second">
             <li>
-              <a href="#Autobiography">Autobiography</a>
-            </li>
-            <li>
-              <a href="#Keyword">Keyword</a>
-            </li>
-            <li>
               <a href="#Actress">Actress</a>
             </li>
             <li>
               <a href="#Film">Film</a>
             </li>
             <li>
-              <a href="#Keyword1">Keyword</a>
+              <a href="#Keyword">Keyword</a>
             </li>
             <li>
               <a href="#Person">Person</a>
@@ -2371,6 +2452,12 @@ td {
             <li>
               <a href="#Concept">Concept</a>
             </li>
+            <li>
+              <a href="#Autobiography">Autobiography</a>
+            </li>
+            <li>
+              <a href="#Keyword">Keyword</a>
+            </li>
           </ul>
         </li>
         <li>
@@ -2380,6 +2467,9 @@ td {
           <ul class="second">
             <li>
               <a href="#birthPlace">birth place</a>
+            </li>
+            <li>
+              <a href="#child">child</a>
             </li>
             <li>
               <a href="#deathPlace">death place</a>
@@ -2418,16 +2508,16 @@ td {
               <a href="#creator">creator</a>
             </li>
             <li>
-              <a href="#contains">contains</a>
-            </li>
-            <li>
-              <a href="#isContainedBy">is contained by</a>
-            </li>
-            <li>
               <a href="#about">about</a>
             </li>
             <li>
               <a href="#keywords">keywords</a>
+            </li>
+            <li>
+              <a href="#contains">contains</a>
+            </li>
+            <li>
+              <a href="#isContainedBy">is contained by</a>
             </li>
             <li>
               <a href="#related">related</a>
@@ -2439,12 +2529,6 @@ td {
             <a href="#datatypeproperties">Datatype Properties</a>
           </h4>
           <ul class="second">
-            <li>
-              <a href="#debutAge">debut age</a>
-            </li>
-            <li>
-              <a href="#nPage">n page</a>
-            </li>
             <li>
               <a href="#activeYearsStartYear">active years start year</a>
             </li>
@@ -2490,6 +2574,12 @@ td {
             <li>
               <a href="#account">account</a>
             </li>
+            <li>
+              <a href="#debutAge">debut age</a>
+            </li>
+            <li>
+              <a href="#nPage">n page</a>
+            </li>
           </ul>
         </li>
         <li>
@@ -2511,7 +2601,7 @@ td {
           </h4>
           <ul class="second">
             <li>
-              <a href="#"></a>
+              <a href="#wow">wow</a>
             </li>
             <li>
               <a href="#arkivo">arkivo</a>
@@ -2523,9 +2613,6 @@ td {
               <a href="#dbp">dbp</a>
             </li>
             <li>
-              <a href="#dbr">dbr</a>
-            </li>
-            <li>
               <a href="#dcterms">dcterms</a>
             </li>
             <li>
@@ -2535,10 +2622,10 @@ td {
               <a href="#foaf">foaf</a>
             </li>
             <li>
-              <a href="#ns1">ns1</a>
+              <a href="#owl">owl</a>
             </li>
             <li>
-              <a href="#owl">owl</a>
+              <a href="#po">po</a>
             </li>
             <li>
               <a href="#rdf">rdf</a>
