@@ -427,7 +427,9 @@ schema:size rdf:type owl:DatatypeProperty ;
 
 ###  https://schema.org/spatial
 schema:spatial rdf:type owl:DatatypeProperty ;
-               rdfs:domain schema:Photograph .
+               rdfs:domain schema:Photograph ;
+               rdfs:range rdfs:Literal .
+
 
 
 ###  https://schema.org/temporal
