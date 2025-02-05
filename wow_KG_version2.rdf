@@ -21,8 +21,9 @@
      xmlns:schema="https://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://purl.archive.org/wow#">
-        <dcterms:issued>2024/09/18</dcterms:issued>
+        <dcterms:issued>2024/12/06</dcterms:issued>
         <dcterms:license>WOW Ontology is licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)</dcterms:license>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</owl:versionInfo>
         <schema:creator>Giorgio Corona, Dario Guidotti and Laura Pandolfo</schema:creator>
         <schema:title>WOW Ontology</schema:title>
     </owl:Ontology>
@@ -56659,6 +56660,7 @@
     <!-- https://www.wikidata.org/wiki/Q18720616 -->
 
     <owl:NamedIndividual rdf:about="https://www.wikidata.org/wiki/Q18720616">
+        <rdf:type rdf:resource="https://schema.org/Person"/>
         <wdt:P106>photographer</wdt:P106>
         <wdt:P1559>Elisabetta Catalano</wdt:P1559>
     </owl:NamedIndividual>
@@ -207174,14 +207176,6 @@
         <owl:annotatedTarget rdf:resource="https://www.wikidata.org/wiki/Q19403344"/>
         <artistAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</artistAge>
     </owl:Axiom>
-    
-
-
-    <!-- https://www.wikidata.org/wiki/Qid -->
-
-    <owl:NamedIndividual rdf:about="https://www.wikidata.org/wiki/Qid">
-        <wdt:P1476>Lbl</wdt:P1476>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 
