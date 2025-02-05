@@ -21,9 +21,9 @@
      xmlns:schema="https://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://purl.archive.org/wow#">
-        <dcterms:issued>2024/12/06</dcterms:issued>
+        <dcterms:issued>2024/12/16</dcterms:issued>
         <dcterms:license>WOW Ontology is licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)</dcterms:license>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</owl:versionInfo>
         <schema:creator>Giorgio Corona, Dario Guidotti and Laura Pandolfo</schema:creator>
         <schema:title>WOW Ontology</schema:title>
     </owl:Ontology>
