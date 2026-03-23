@@ -1,0 +1,817 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.archive.org/wow#"
+     xml:base="https://purl.archive.org/wow"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:po="http://www.essepuntato.it/2008/12/pattern#"
+     xmlns:wd="https://www.wikidata.org/wiki/"
+     xmlns:dbo="http://dbpedia.org/ontology/"
+     xmlns:dbp="http://dbpedia.org/property/"
+     xmlns:dbr="http://dbpedia.org/resource/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wdt="https://www.wikidata.org/wiki/Property:"
+     xmlns:wow="https://purl.archive.org/wow#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:doco="http://purl.org/spar/doco/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:arkivo="http://purl.org/arkivo/ontology#"
+     xmlns:schema="https://schema.org/"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://purl.archive.org/wow#">
+        <dcterms:issued>2024/12/16</dcterms:issued>
+        <dcterms:license>WOW Ontology is licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)</dcterms:license>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</owl:versionInfo>
+        <schema:creator>Giorgio Corona, Dario Guidotti and Laura Pandolfo</schema:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- https://purl.archive.org/wow#artistAge -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.archive.org/wow#artistAge"/>
+    
+
+
+    <!-- https://purl.archive.org/wow#nTimes -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.archive.org/wow#nTimes"/>
+    
+
+
+    <!-- https://schema.org/creator -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/birthPlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/birthPlace">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/deathPlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/deathPlace">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/arkivo/ontology#isMentionedIn -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/arkivo/ontology#isMentionedIn">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://schema.org/Book"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:domain rdf:resource="https://schema.org/Book"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Writer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/relation -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/relation">
+        <rdfs:domain rdf:resource="http://purl.org/spar/doco/BlockQuotation"/>
+        <rdfs:range rdf:resource="https://schema.org/Photograph"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/2008/12/pattern#contains">
+        <rdfs:domain rdf:resource="https://schema.org/Book"/>
+        <rdfs:range rdf:resource="http://purl.org/spar/doco/BlockQuotation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#isContainedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/2008/12/pattern#isContainedBy">
+        <rdfs:domain rdf:resource="http://purl.org/spar/doco/BlockQuotation"/>
+        <rdfs:range rdf:resource="https://schema.org/Book"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#related">
+        <rdfs:domain rdf:resource="https://purl.archive.org/wow#Keyword"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/about -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/about">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/spar/doco/BlockQuotation"/>
+                    <rdf:Description rdf:about="https://schema.org/Photograph"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/author -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/author">
+        <rdfs:domain rdf:resource="https://schema.org/Photograph"/>
+        <rdfs:range rdf:resource="https://schema.org/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/contentLocation -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/contentLocation">
+        <rdfs:domain rdf:resource="https://schema.org/Photograph"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/event -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/event">
+        <rdfs:domain rdf:resource="https://schema.org/Photograph"/>
+        <rdfs:range rdf:resource="https://www.wikidata.org/wiki/Q2431196"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/keywords -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/keywords">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/spar/doco/BlockQuotation"/>
+                    <rdf:Description rdf:about="https://schema.org/Photograph"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://purl.archive.org/wow#Keyword"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/mainEntity -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/mainEntity">
+        <rdfs:domain rdf:resource="https://schema.org/Photograph"/>
+        <rdfs:range rdf:resource="https://schema.org/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P1038 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P1038">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="https://schema.org/Person"/>
+        <rdfs:label>relative</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P161 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P161">
+        <rdfs:domain rdf:resource="https://www.wikidata.org/wiki/Q2431196"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>cast_member</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P162 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P162">
+        <rdfs:domain rdf:resource="https://www.wikidata.org/wiki/Q2431196"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>producer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P22 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P22">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="https://schema.org/Person"/>
+        <rdfs:label>father</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P25 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P25">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="https://schema.org/Person"/>
+        <rdfs:label>mother</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P26 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P26">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="https://schema.org/Person"/>
+        <rdfs:label>spouse</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P3373 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P3373">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="https://schema.org/Person"/>
+        <rdfs:label>sibling</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P40 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P40">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="https://schema.org/Person"/>
+        <rdfs:label>child</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P451 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P451">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="https://schema.org/Person"/>
+        <rdfs:label>unmarried_partner</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P495 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P495">
+        <rdfs:domain rdf:resource="https://www.wikidata.org/wiki/Q2431196"/>
+        <rdfs:range rdf:resource="https://www.wikidata.org/wiki/Q6256"/>
+        <rdfs:label>country_of_origin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P57 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P57">
+        <rdfs:domain rdf:resource="https://www.wikidata.org/wiki/Q2431196"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>director</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P58 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P58">
+        <rdfs:domain rdf:resource="https://www.wikidata.org/wiki/Q2431196"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>screenwriter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/activeYearsStartYear -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/activeYearsStartYear">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/birthName -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/birthName">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/birthYear -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/birthYear">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/deathYear -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/deathYear">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/firstPublisher -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/firstPublisher">
+        <rdfs:domain rdf:resource="https://schema.org/Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/property/name -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/property/name">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://dbpedia.org/ontology/Place"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:domain rdf:resource="https://schema.org/Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <rdf:Description rdf:about="https://purl.archive.org/wow#Keyword"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/account -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/account">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purl.archive.org/wow#debutAge -->
+
+    <owl:DatatypeProperty rdf:about="https://purl.archive.org/wow#debutAge">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purl.archive.org/wow#format -->
+
+    <owl:DatatypeProperty rdf:about="https://purl.archive.org/wow#format">
+        <rdfs:domain rdf:resource="https://schema.org/Photograph"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purl.archive.org/wow#genre -->
+
+    <owl:DatatypeProperty rdf:about="https://purl.archive.org/wow#genre">
+        <rdfs:domain rdf:resource="https://schema.org/Photograph"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purl.archive.org/wow#nPage -->
+
+    <owl:DatatypeProperty rdf:about="https://purl.archive.org/wow#nPage">
+        <rdfs:domain rdf:resource="http://purl.org/spar/doco/BlockQuotation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/creativeWorkStatus -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/creativeWorkStatus">
+        <rdfs:domain rdf:resource="https://schema.org/Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/datePublished -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/datePublished">
+        <rdfs:domain rdf:resource="https://schema.org/Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/genre -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/genre">
+        <rdfs:domain rdf:resource="https://schema.org/Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/holdingArchive -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/holdingArchive">
+        <rdfs:domain rdf:resource="https://schema.org/Photograph"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/identifier -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/identifier">
+        <rdfs:domain rdf:resource="https://schema.org/Photograph"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/publisher -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/publisher">
+        <rdfs:domain rdf:resource="https://schema.org/Photograph"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/size -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/size">
+        <rdfs:domain rdf:resource="https://schema.org/Photograph"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/spatial -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/spatial">
+        <rdfs:domain rdf:resource="https://schema.org/Photograph"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/temporal -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/temporal">
+        <rdfs:domain rdf:resource="https://schema.org/Photograph"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/url -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/url">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Book"/>
+                    <rdf:Description rdf:about="https://schema.org/Photograph"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P106 -->
+
+    <owl:DatatypeProperty rdf:about="https://www.wikidata.org/wiki/Property:P106">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>occupation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P136 -->
+
+    <owl:DatatypeProperty rdf:about="https://www.wikidata.org/wiki/Property:P136">
+        <rdfs:domain rdf:resource="https://www.wikidata.org/wiki/Q2431196"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>genre</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P1476 -->
+
+    <owl:DatatypeProperty rdf:about="https://www.wikidata.org/wiki/Property:P1476">
+        <rdfs:domain rdf:resource="https://www.wikidata.org/wiki/Q2431196"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P21 -->
+
+    <owl:DatatypeProperty rdf:about="https://www.wikidata.org/wiki/Property:P21">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>gender</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P31 -->
+
+    <owl:DatatypeProperty rdf:about="https://www.wikidata.org/wiki/Property:P31">
+        <rdfs:domain rdf:resource="https://www.wikidata.org/wiki/Q2431196"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>instance of</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P577 -->
+
+    <owl:DatatypeProperty rdf:about="https://www.wikidata.org/wiki/Property:P577">
+        <rdfs:domain rdf:resource="https://www.wikidata.org/wiki/Q2431196"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>publication date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/Place -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Place">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Writer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Writer">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/doco/BlockQuotation -->
+
+    <owl:Class rdf:about="http://purl.org/spar/doco/BlockQuotation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/wow#Actress -->
+
+    <owl:Class rdf:about="https://purl.archive.org/wow#Actress">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
+        <rdfs:isDefinedBy>https://dbpedia.org/page/Category:Actresses</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q21169216</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/wow#Keyword -->
+
+    <owl:Class rdf:about="https://purl.archive.org/wow#Keyword">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Book -->
+
+    <owl:Class rdf:about="https://schema.org/Book">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Person -->
+
+    <owl:Class rdf:about="https://schema.org/Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q215627"/>
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Photograph -->
+
+    <owl:Class rdf:about="https://schema.org/Photograph">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q2431196 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q2431196">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>AudiovisualWork</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q6256 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q6256">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Country</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
