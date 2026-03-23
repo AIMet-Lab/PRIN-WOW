@@ -1,5 +1,5 @@
 # WOmen Writing around the camera (WOW)
-<img src="https://raw.githubusercontent.com/AIMet-Lab/PRIN-WOW/main/home/imgs/logo_wow.png" width="266" alt="Logo WOW">
+<img src="https://raw.githubusercontent.com/AIMet-Lab/PRIN-WOW/main/home/imgs/logo_wow.png" width="200" alt="Logo WOW">
 
 Welcome to the WOW Project GitHub repository!
 
