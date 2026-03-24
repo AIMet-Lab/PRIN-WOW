@@ -20,7 +20,7 @@ By analysing these dynamics, the WOW archive bridges autobiographical materials,
 - 📄 [Ontology file in RDF format](https://github.com/AIMet-Lab/PRIN-WOW/raw/main/WOW_ontology_3.2.rdf)
 - 📄 [Data in RDF format](https://github.com/AIMet-Lab/PRIN-WOW/raw/main/WOW_graph_3.2.rdf)
 - 📄 [Digital Humanities Tooklit Documantation](https://github.com/AIMet-Lab/PRIN-WOW/raw/main/dh_toolkit/wow_dh_toolkit.pdf)
-- ⚙️ [Digital Humanities Tooklit (soon available)]
+- ⚙️ Digital Humanities Tooklit (soon available)
 
 **Version:** 3.2
 
