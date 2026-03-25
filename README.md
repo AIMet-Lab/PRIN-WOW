@@ -30,7 +30,9 @@ By analysing these dynamics, the WOW archive bridges autobiographical materials,
 # Publications
 
 - Corona, G., Guidotti, D., Pandolfo, L., & Pulina, L. (2025). How Do LLMs Extract Meaning from Narrative Literature? Exploring Entailment-Driven Extraction from Autobiographical Writings. *ACM Journal on Computing and Cultural Heritage* (under review).
+  
 - [Corona, G., Guidotti, D., & Pandolfo, L. (2025). A Multi-Modal Knowledge Graph for Mapping Narratives of Cinema's Divas. Proceedings of the 21st Conference on Information and Research science Connecting to Digital and Library science. *CEUR Workshop Proceedings*, 3937.](https://ceur-ws.org/Vol-3937/paper7.pdf)
+  
 - [Corona, G., Guidotti, D., & Pandolfo, L. (2024). Constructing a Knowledge Graph for Italian Cinema Divas' Autobiographies. Proceedings of the 3rd Workshop on Artificial Intelligence for Cultural Heritage (IAI4CH 2024) co-located with the 23rd International Conference of the Italian Association for Artificial Intelligence (AIxIA 2024). *CEUR Workshop Proceedings*, 3865, pp. 22–29](https://ceur-ws.org/Vol-3865/03_paper.pdf).
 
 # Funding and Support
