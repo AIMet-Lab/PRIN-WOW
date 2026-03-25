@@ -15,6 +15,7 @@ By analysing these dynamics, the WOW archive bridges autobiographical materials,
 - Ontology Development: Create an ontology to semantically describe relationships between texts, performances, and star imagery.
 - Knowledge Graph (KG) and Linked Data: Enable researchers to explore and query data about the dynamics between writing and performance through a KG technologies, ensuring interoperability with broader digital humanities resources.
 - Preservation: Digitally preserve a significant but underexplored area of cultural heritage.
+- Digital Humanities Toolkit: Provide a toolkit for automated text analysis, including OCR, entity recognition, and semantic reporting.
 
 ## Resources
 - 📄 [Ontology file in RDF format](https://github.com/AIMet-Lab/PRIN-WOW/blob/main/WOW_ontology_3.2.rdf)
