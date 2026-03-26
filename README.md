@@ -1,7 +1,7 @@
 # Welcome to the WOW Project GitHub repository!
 <img src="https://raw.githubusercontent.com/AIMet-Lab/PRIN-WOW/main/home/imgs/wow_scuro.png" width="300" alt="Logo WOW">
 
-The WOW project focuses on developing an ontology-based archive that collects and semantically structures data about the writings of Italian actresses, known as “Divagrafie.” These writings explore the intersections between:
+The WOmen Writing around the camera (WOW) project focuses on developing an ontology-based archive that collects and semantically structures data about the writings of Italian actresses, known as “Divagrafie.” These writings explore the intersections between:
 - Writing: Personal narratives and creative works.
 - Acting Performance: Artistic expression and its relationship to text.
 - Star Image Construction: How writings contribute to the public and cultural image of actresses.
@@ -33,6 +33,9 @@ By analysing these dynamics, the WOW archive bridges autobiographical materials,
   
 - [Corona, G., Guidotti, D., & Pandolfo, L. (2024). Constructing a Knowledge Graph for Italian Cinema Divas' Autobiographies. Proceedings of the 3rd Workshop on Artificial Intelligence for Cultural Heritage (IAI4CH 2024) co-located with the 23rd International Conference of the Italian Association for Artificial Intelligence (AIxIA 2024). *CEUR Workshop Proceedings*, 3865, pp. 22–29](https://ceur-ws.org/Vol-3865/03_paper.pdf).
 
+- [Pandolfo L., Cardone L., Cutzu L., Perna R., Seligardi B., Simi G. (2023). The WOW Project: Bridging AI and Cultural Heritage for Actress Writings (short paper). Proceedings of the 3rd Workshop on Artificial Intelligence for Cultural Heritage (IAI4CH 2024) co-located with the 23rd International Conference of the Italian Association for Artificial Intelligence (AIxIA 2024). *CEUR Workshop Proceedings*, pp. 34-41](https://ceur-ws.org/Vol-3536/04\_paper.pdf).
+
+- [Pandolfo L., Cardone L., Cutzu L., Perna R., Seligardi B., Simi G. (2022). Building the Semantic Portal of Italian Divagrafie (Short Paper). Proceedings of the 10th Italian workshop on Planning and Scheduling (IPS 2022), RCRA Incontri E Confronti (RiCeRcA 2022), and the workshop on Strategies, Prediction, Interaction, and Reasoning in Italy (SPIRIT 2022) co-located with 21st International Conference  of the Italian Association for Artificial Intelligence (AIxIA 2022), November 28 - December 2, 2022, University of Udine, Udine, Italy. *CEUR Workshop Proceedings*](https://ceur-ws.org/Vol-3345/paper11\_RiCeRCa4.pdf). 
 # Funding and Support
 The WOW project has been supported by the PRIN 2022 funded by the European Union-Next Generation EU, Mission 4 Component C2, CUP: J53D23013480006.
 
