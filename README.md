@@ -1,9 +1,6 @@
-# WOmen Writing around the camera (WOW)
-<img src="https://raw.githubusercontent.com/AIMet-Lab/PRIN-WOW/main/home/imgs/wow_scuro.png" width="180" alt="Logo WOW">
+# Welcome to the WOW Project GitHub repository!
+<img src="https://raw.githubusercontent.com/AIMet-Lab/PRIN-WOW/main/home/imgs/wow_scuro.png" width="300" alt="Logo WOW">
 
-Welcome to the WOW Project GitHub repository!
-
-# About the Project
 The WOW project focuses on developing an ontology-based archive that collects and semantically structures data about the writings of Italian actresses, known as “Divagrafie.” These writings explore the intersections between:
 - Writing: Personal narratives and creative works.
 - Acting Performance: Artistic expression and its relationship to text.
